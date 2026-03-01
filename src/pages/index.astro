@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Turbo Puffin — Built for the agentic web.</title>
   <meta name="description" content="Turbo Puffin builds companies that treat agents as first-class users — not as an afterthought, not as a feature. From the ground up." />
+  <meta property="og:title" content="Turbo Puffin" />
+  <meta property="og:description" content="Turbo Puffin builds companies that treat agents as first-class users — not as an afterthought, not as a feature. From the ground up." />
+  <meta property="og:url" content="https://turbopuffin.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,18 +75,6 @@
       line-height: 1;
     }
 
-    .logo-sep {
-      color: var(--muted);
-      font-weight: 300;
-    }
-
-    .logo-name {
-      font-size: 0.95rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      color: var(--secondary);
-    }
-
     /* ── Main layout ── */
     main {
       flex: 1;
@@ -128,19 +121,20 @@
       display: inline-flex;
       align-items: center;
       gap: 0.375rem;
-      background: var(--accent);
-      color: #fff;
+      background: transparent;
+      color: #FF9A3C;           /* ~9:1 on #0D0D0D — WCAG AAA ✓ */
+      border: 2px solid var(--accent);
       text-decoration: none;
       font-size: 0.9375rem;
       font-weight: 700;
       letter-spacing: -0.01em;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
-      transition: opacity 0.15s ease;
+      transition: background 0.15s ease, color 0.15s ease;
     }
 
     .cta-primary:hover {
-      opacity: 0.88;
+      background: rgba(232, 97, 26, 0.10);
     }
 
     /* ── Philosophy section ── */
