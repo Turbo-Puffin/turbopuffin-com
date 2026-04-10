@@ -1,0 +1,243 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  lastUpdated?: string;
+}
+
+const { title, description, lastUpdated } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} — Turbo Puffin</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script defer data-site="qknee4maxdqqhpyva2cb0og9" src="https://lets.measure.events/tracker.js"></script>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0D0D0D;
+      --text: #F0F0ED;
+      --secondary: #D4D4CF;
+      --muted: #C5C5C0;
+      --accent: #E8611A;
+      --divider: #1C1C1C;
+    }
+
+    html {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--divider);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo-mark {
+      font-size: 1.125rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+      width: 100%;
+    }
+
+    .policy-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .policy-header h1 {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .last-updated {
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    .policy-content h2 {
+      font-size: 1.375rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .policy-content h3 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .policy-content p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .policy-content ul, .policy-content ol {
+      margin-bottom: 1rem;
+      padding-left: 1.25rem;
+    }
+
+    .policy-content li {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .policy-content a {
+      color: #FF9A3C;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .policy-content a:hover {
+      color: var(--accent);
+    }
+
+    .policy-content strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .policy-content em {
+      font-style: italic;
+      color: var(--secondary);
+    }
+
+    .policy-nav {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--divider);
+    }
+
+    .policy-nav a {
+      color: #FF9A3C;
+      text-decoration: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+    }
+
+    .policy-nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 2.5rem 1.5rem;
+      border-top: 1px solid var(--divider);
+      text-align: center;
+      margin-top: 0;
+    }
+
+    footer p {
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 2rem 1.5rem 3rem;
+      }
+    }
+  </style>
+  <script defer src="https://lets.measure.events/api/script/c0lxammnxpt7oi6icrc5oqkg"></script>
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo" aria-label="Turbo Puffin">
+      <span class="logo-mark">Turbo Puffin</span>
+    </a>
+    <nav>
+      <a href="/policies">Policies</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="policy-header">
+      <h1>{title}</h1>
+      {lastUpdated && <p class="last-updated">Last updated: {lastUpdated}</p>}
+    </div>
+    <div class="policy-content">
+      <slot />
+    </div>
+    <div class="policy-nav">
+      <a href="/policies">← All policies</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Turbo Puffin, LLC · Georgetown, MA · <a href="mailto:hello@turbopuffin.com">hello@turbopuffin.com</a></p>
+  </footer>
+
+</body>
+</html>

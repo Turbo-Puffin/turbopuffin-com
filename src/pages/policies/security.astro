@@ -1,0 +1,42 @@
+---
+import PolicyLayout from '../../layouts/PolicyLayout.astro';
+---
+<PolicyLayout title="Security Overview" description="How Turbo Puffin protects your data." lastUpdated="April 10, 2026">
+
+<p>We take security seriously. Here's how we protect your data.</p>
+
+<h2>Encryption</h2>
+
+<p>All data moving between you and us is encrypted using TLS. Your browser shows the lock icon — that's us. Database backups are encrypted. Sensitive data like banking credentials and payment tokens are encrypted at rest.</p>
+
+<h2>Infrastructure</h2>
+
+<p>Our applications run on modern cloud infrastructure with regular security patching, automated backups, and monitoring. We use established providers with their own physical security, redundancy, and compliance certifications.</p>
+
+<h2>Payment security</h2>
+
+<p>Credit card processing goes through Stripe, which is PCI Level 1 compliant — the highest level of certification in the payments industry. Card numbers never touch our servers.</p>
+
+<h2>Banking data security (Helm)</h2>
+
+<p>Bank account connections in Helm go through Teller, a regulated banking data provider. Your banking credentials are never stored on our servers. Teller handles the connection and authentication directly.</p>
+
+<h2>Access controls</h2>
+
+<p>We limit who can access production systems to the people who actually need to maintain them. We use strong authentication for all internal access. We don't look at your data unless you ask us to for support or we need to fix something broken — and we'll tell you about it when we do.</p>
+
+<h2>Monitoring</h2>
+
+<p>We monitor our systems for unusual activity and security threats. If something looks wrong, we investigate it immediately. We haven't had a data breach and we work hard to keep it that way.</p>
+
+<h2>Backups</h2>
+
+<p>Your data is backed up regularly. Backups are encrypted and stored separately from our production systems. If something catastrophic happens, we can restore from backups.</p>
+
+<h2>Reporting a security issue</h2>
+
+<p>If you've found a vulnerability or experienced a security incident with your account, email <a href="mailto:hello@turbopuffin.com">hello@turbopuffin.com</a> right away. We'll respond as fast as we can.</p>
+
+<p>If something bad does happen — and we'll do everything we can to prevent it — we'll notify affected customers immediately and be transparent about what happened, what data was involved, and what we're doing about it.</p>
+
+</PolicyLayout>

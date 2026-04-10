@@ -1,0 +1,211 @@
+---
+import PolicyLayout from '../../layouts/PolicyLayout.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policies — Turbo Puffin</title>
+  <meta name="description" content="Turbo Puffin policies — terms, privacy, security, and more. Written in plain language because that's how it should be." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script defer data-site="qknee4maxdqqhpyva2cb0og9" src="https://lets.measure.events/tracker.js"></script>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0D0D0D;
+      --text: #F0F0ED;
+      --secondary: #D4D4CF;
+      --muted: #C5C5C0;
+      --accent: #E8611A;
+      --divider: #1C1C1C;
+      --card-bg: #141414;
+      --card-border: #222222;
+    }
+
+    html {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--divider);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .logo-mark {
+      font-size: 1.125rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .intro {
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: var(--secondary);
+      margin-bottom: 2.5rem;
+      max-width: 560px;
+    }
+
+    .policy-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .policy-link {
+      display: block;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 1.25rem 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s ease;
+    }
+
+    .policy-link:hover {
+      border-color: #2E2E2E;
+    }
+
+    .policy-link h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+
+    .policy-link p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 2.5rem 1.5rem;
+      border-top: 1px solid var(--divider);
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 2rem 1.5rem 3rem;
+      }
+    }
+  </style>
+  <script defer src="https://lets.measure.events/api/script/c0lxammnxpt7oi6icrc5oqkg"></script>
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo" aria-label="Turbo Puffin">
+      <span class="logo-mark">Turbo Puffin</span>
+    </a>
+  </header>
+
+  <main>
+    <h1>Policies</h1>
+    <p class="intro">We try to make our policies readable. No one should need a lawyer to understand what happens with their data or their money.</p>
+
+    <div class="policy-list">
+      <a href="/policies/terms" class="policy-link">
+        <h2>Terms of Service</h2>
+        <p>What you agree to when you use our products.</p>
+      </a>
+
+      <a href="/policies/privacy" class="policy-link">
+        <h2>Privacy Policy</h2>
+        <p>What we collect, why we collect it, and what we do with it.</p>
+      </a>
+
+      <a href="/policies/refund" class="policy-link">
+        <h2>Refund Policy</h2>
+        <p>How refunds work if you're not happy.</p>
+      </a>
+
+      <a href="/policies/security" class="policy-link">
+        <h2>Security Overview</h2>
+        <p>How we protect your data.</p>
+      </a>
+
+      <a href="/policies/ownership" class="policy-link">
+        <h2>Account Ownership</h2>
+        <p>Who owns what in your account.</p>
+      </a>
+
+      <a href="/policies/until-the-end-of-the-internet" class="policy-link">
+        <h2>Until the End of the Internet</h2>
+        <p>Our commitment to keeping your stuff around.</p>
+      </a>
+
+      <a href="/policies/taxes" class="policy-link">
+        <h2>Taxes</h2>
+        <p>Where we collect tax and how it works.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Turbo Puffin, LLC · Georgetown, MA · <a href="mailto:hello@turbopuffin.com">hello@turbopuffin.com</a></p>
+  </footer>
+
+</body>
+</html>
